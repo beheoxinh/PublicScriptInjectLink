@@ -117,9 +117,16 @@
     display: none !important;
 }
 
-.sfx_dialog input[type="checkbox"]:not(.normal) ~ label{
+.sfx_dialog input[type="checkbox"]:not(.normal) ~ label {
     box-shadow: none !important;
-    border: 1px solid black !important;
+    background-color: darkgray;
+    border: 1px solid darkgray;
+}
+
+.sfx_dialog input[type="checkbox"]:not(.normal):checked ~ label {
+    background-color: transparent;
+    box-shadow: none;
+    border: 1px solid #6e9cff;
 }
 
 .sfx_menu_section_title{
@@ -146,6 +153,20 @@
 }
 
 .sfx_options_dialog_option_action{
-    vertical-align: middle;
-    background-color: #242526;
+    vertical-align: middle !important;
+    background-color: #242526 !important;
+}
+
+.sfx_info{
+    display:none !important;
+}
+
+textarea#sfx_user_data{
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+#sfx_options_dialog_sections > div:nth-child(9), #sfx_options_dialog_sections > div:nth-child(10), #sfx_options_dialog_sections > div:nth-child(11), #sfx_options_dialog_sections > div:nth-child(12){
+    display: none !important;
 }
