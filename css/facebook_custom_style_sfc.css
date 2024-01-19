@@ -89,9 +89,9 @@
 }
 
 #sfx_badge_menu_wrap, #sfx_options_dialog, #sfx_options_dialog_body, 
-.sfx_options_dialog_option_description, .sfx_options_dialog_option_title, .sfx_options_dialog_section {
-    color: #ffffff;
-    background-color: #242526;
+.sfx_options_dialog_option_description, .sfx_options_dialog_panel_header, .sfx_options_dialog_option_title, .sfx_options_dialog_section {
+    color: #ffffff !important;
+    background-color: #242526 !important;
 }
 
 .sfx_options_dialog_section{
@@ -109,7 +109,7 @@
     border: 1px solid lightblue;
 }
 
-#sfx_options_dialog_content > .sfx_options_dialog_table > tr:hover{
+#sfx_options_dialog_content .sfx_options_dialog_table tr:hover{
     background-color: #333333;
 }
 
@@ -130,4 +130,14 @@
     border: 1px solid gray;
     background-color: black;
     font-size: 14px;
+}
+
+.sfx_square_add{
+    background-color: #242526;
+    padding: 0 2px 3px;
+    border: 1px solid gray;
+}
+
+.sfx_options_dialog_option_action{
+    vertical-align: middle;
 }
