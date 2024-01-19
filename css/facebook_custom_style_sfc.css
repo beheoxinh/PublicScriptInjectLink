@@ -176,8 +176,9 @@ textarea#sfx_user_data{
     max-width: 2400px;
 }
 
-div[role="main"] > div > div > div > div:nth-child(2){
-  width: 1220px;
+div[role="main"] > div > div > div > div:nth-child(2), div[role="main"] > div > div > div > div:nth-child(2) > div > div> div {
+    width: 1220px;
+    max-width: 100%;
 }
 
 div[role="main"] > div > div > div > div:last-child > div:first-child {
