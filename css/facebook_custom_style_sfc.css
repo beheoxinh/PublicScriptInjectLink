@@ -98,7 +98,8 @@
 }
 
 #sfx_badge_menu_wrap, #sfx_options_dialog, #sfx_options_dialog_body, 
-.sfx_options_dialog_option_description, .sfx_options_dialog_panel_header, .sfx_options_dialog_option_title, .sfx_options_dialog_section {
+.sfx_options_dialog_option_description, .sfx_options_dialog_panel_header, .sfx_options_dialog_option_title, .sfx_options_dialog_section, .sfx_options_dialog_panel {
+    vertical-align: top !important;
     color: #ffffff !important;
     background-color: #242526 !important;
 }
@@ -136,7 +137,22 @@
     display: none !important;
 }
 
+.sfx_options_dialog_option_action input.sfx_button{
+    margin: 8px 0;
+}
+
+.sfx_options_dialog_option_description input{
+    color: white;
+    background-color: black;
+    padding: 0 5px;
+}
+
+.sfx_options_dialog_option_description input[type="number"]{
+    margin-left: 5px;
+}
+
 .sfx_dialog input[type="checkbox"]:not(.normal) ~ label {
+    margin: 6px 0;
     box-shadow: none !important;
     background-color: darkgray;
     border: 1px solid darkgray;
@@ -148,7 +164,7 @@
     border: 1px solid #6e9cff;
 }
 
-.sfx_menu_section_title{
+.sfx_menu_section_title, .sfx_panel_title_bar{
     margin-bottom: 8px !important;
     padding: 2px 14px 5px !important;
     font-size: 15px !important;
@@ -162,7 +178,8 @@
     margin: 0px 3px;
     border: 1px solid gray;
     background-color: black;
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 800;
 }
 
 .sfx_square_add{
@@ -171,7 +188,7 @@
     border: 1px solid gray;
 }
 
-.sfx_options_dialog_option_action, .sfx_options_dialog_table td[style="text-align:center;"]{
+.sfx_options_dialog_option_action, .sfx_options_dialog_table td{
     vertical-align: middle !important;
     background-color: #242526 !important;
 }
