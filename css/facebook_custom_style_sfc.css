@@ -117,12 +117,19 @@
     display: none !important;
 }
 
+.sfx_dialog input[type="checkbox"]:not(.normal) ~ label{
+    box-shadow: none !important;
+    border: 1px solid black !important;
+}
+
 .sfx_menu_section_title{
     margin-bottom: 8px !important;
-    padding: 2px 14px 0 !important;
+    padding: 2px 14px 5px !important;
     font-size: 15px !important;
     pointer-events: none !important;
     cursor: default !important;
+    background-color: #3f38c1;
+    color: white !important;
 }
 
 .sfx_square_control{
@@ -140,4 +147,5 @@
 
 .sfx_options_dialog_option_action{
     vertical-align: middle;
+    background-color: #242526;
 }
