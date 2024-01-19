@@ -1,4 +1,4 @@
-#sfx_badge_logo {
+/* #sfx_badge_logo {
     position: relative;
     z-index: 351;
     color: white;
@@ -14,4 +14,39 @@
     opacity: 0.2 !important;
     border-radius: 5px !important;
     background: url(https://cdn3.iconfinder.com/data/icons/picons-social/57/06-facebook-64.png) center center no-repeat rgb(44, 65, 102) !important;
+} */
+
+#sfx_badge_logo {
+    position: relative !important;
+    overflow: hidden !important;
+    background: #555555 !important;
+    text-indent: -999em !important;
+    width: 20px !important;
+    height: 26px !important;
+    border-radius: 5px !important;
+    border: 7px solid #555555 !important;
+    border-bottom: 0 !important;
+    display: inline-block !important;
+    opacity: 0.2 !important;
+}
+  
+#sfx_badge_logo::before {
+    content: "/20";
+    position: absolute;
+    bottom: -30%;
+    right: -40%;
+    width: 40%;
+    height: 80%;
+    border: 5px solid #eee;
+    border-radius: 20%;
+}
+  
+#sfx_badge_logo::after {
+    background: #eee;
+    content: "/20";
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    width: 60%;
+    height: 15%;
 }
