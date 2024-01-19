@@ -1,5 +1,17 @@
-#sfx_badge_logo{
+#sfx_badge_logo {
+    position: relative;
+    z-index: 351;
+    color: white;
+    font-size: calc(0.45rem * var(--sfx_ui_scale));
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    box-shadow: rgb(28, 28, 28) 3px 3px 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    opacity: 0.2 !important;
     border-radius: 5px !important;
     background: url(https://cdn3.iconfinder.com/data/icons/picons-social/57/06-facebook-64.png) center center no-repeat rgb(44, 65, 102) !important;
-    opacity: 0.2 !important;
 }
