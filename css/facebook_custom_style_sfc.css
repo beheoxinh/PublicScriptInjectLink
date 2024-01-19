@@ -118,9 +118,9 @@
 }
 
 .sfx_menu_section_title{
-    margin-bottom: 8px;
-    padding: 2px 14px 0;
-    font-size: 15px;
+    margin-bottom: 8px !important;
+    padding: 2px 14px 0 !important;
+    font-size: 15px !important;
     pointer-events: none !important;
     cursor: default !important;
 }
