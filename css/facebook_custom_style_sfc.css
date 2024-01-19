@@ -30,6 +30,7 @@
     border-bottom: 0 !important;
     display: inline-block !important;
     opacity: 0.2 !important;
+    background: none;
 }
   
 #sfx_badge_logo::before {
@@ -56,12 +57,14 @@
 #sfx_badge_logo {
     display: block;
     position: relative;
+    opacity: 0.3;
+    background: none;
     box-sizing: border-box;
     transform: scale(var(--ggs,1));
     width: 18px;
     height: 22px;
     border: 2px solid;
-    border-radius: 3px
+    border-radius: 3px;
 }
 #sfx_badge_logo::after,
 #sfx_badge_logo::before {
