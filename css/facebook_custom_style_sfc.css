@@ -213,13 +213,12 @@ textarea#sfx_user_data{
 }
 
 div[role="main"]{
-    position: relative;
-    left: 1%;
     margin: 0 auto;
     max-width: 1240px;
 }
 
 .__fb-dark-mode > div > div[role="main"]{
+    position: relative;
     left: 10%;
 }
 
