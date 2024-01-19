@@ -212,6 +212,17 @@ textarea#sfx_user_data{
     max-width: 2400px;
 }
 
+div[role="main"]{
+    position: relative;
+    left: 1%;
+    margin: 0 auto;
+    max-width: 1240px;
+}
+
+.__fb-dark-mode div[role="main"]{
+    left: 10%;
+}
+
 div[role="main"] > div > div > div > div:nth-child(2), div[role="main"] > div > div > div > div:nth-child(2) > div > div> div {
     width: 1220px;
     max-width: 100%;
