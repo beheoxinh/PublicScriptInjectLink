@@ -97,6 +97,11 @@
     max-height:30px;
 }
 
+.sfx_options_dialog_option_action, .sfx_options_dialog_table td{
+    vertical-align: middle !important;
+    background-color: #242526 !important;
+}
+
 #sfx_badge_menu_wrap, #sfx_options_dialog, #sfx_options_dialog_body, 
 .sfx_options_dialog_option_description, .sfx_options_dialog_panel_header, .sfx_options_dialog_option_title, .sfx_options_dialog_section, .sfx_options_dialog_panel {
     vertical-align: top !important;
@@ -136,7 +141,12 @@
 #sfx_menu_section_links, #sfx_menu_section_debug, #sfx_menu_section_other{
     display: none !important;
 }
-
+#sfx_options_dialog_section input.sfx_input{
+    color: white;
+    background-color: black;
+    padding: 0 5px;
+    border: none !important;
+}
 .sfx_options_dialog_option_action input.sfx_button{
     margin: 8px 0;
 }
@@ -188,16 +198,12 @@
     border: 1px solid gray;
 }
 
-.sfx_options_dialog_option_action, .sfx_options_dialog_table td{
-    vertical-align: middle !important;
-    background-color: #242526 !important;
-}
-
 .sfx_info{
     display:none !important;
 }
 
-textarea#sfx_user_data{
+/* textarea#sfx_user_data{ */
+textarea{
     color: white;
     background-color: black;
     padding: 15px;
