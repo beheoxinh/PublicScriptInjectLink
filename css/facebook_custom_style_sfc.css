@@ -193,8 +193,8 @@ div[role="main"] > div > div > div > div:nth-child(2), div[role="main"] > div > 
 div[role="main"] > div > div > div > div:last-child > div:first-child {
   width: 1220px;
 }
-
+/* 
 @media (min-height: 790px)
 div[role="main"] > div > div > div > div:last-child > div:first-child {
   width: 1020px;
-}
+} */
