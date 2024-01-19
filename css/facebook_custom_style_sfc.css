@@ -170,3 +170,12 @@ textarea#sfx_user_data{
 #sfx_options_dialog_sections > div:nth-child(9), #sfx_options_dialog_sections > div:nth-child(10), #sfx_options_dialog_sections > div:nth-child(11), #sfx_options_dialog_sections > div:nth-child(12){
     display: none !important;
 }
+
+/* Facebook content */
+.xylbxtu {
+    max-width: 2400px;
+}
+@media (min-height: 790px)
+.x1ceravr.x1ceravr {
+    width: 1280px;
+}
