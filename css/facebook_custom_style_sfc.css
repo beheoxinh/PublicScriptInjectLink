@@ -176,11 +176,15 @@ textarea#sfx_user_data{
     max-width: 2400px;
 }
 
+div[role="main"] > div > div > div > div:nth-child(2){
+  width: 1220px;
+}
+
 div[role="main"] > div > div > div > div:last-child > div:first-child {
   width: 1220px;
 }
 
 @media (min-height: 790px)
 div[role="main"] > div > div > div > div:last-child > div:first-child {
-  width: 1220px;
+  width: 1020px;
 }
