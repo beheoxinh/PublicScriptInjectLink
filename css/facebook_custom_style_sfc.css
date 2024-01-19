@@ -180,11 +180,11 @@ div[role="main"]{
     
 }
 
-div[role="main"] > div > div > div:first-child {
+div[role="main"] > div > div > div > div > div:first-child {
   width: 1220px;
 }
 
 @media (min-height: 790px)
-div[role="main"] > div > div > div:first-child {
+div[role="main"] > div > div > div > div > div:first-child {
   width: 1220px;
 }
