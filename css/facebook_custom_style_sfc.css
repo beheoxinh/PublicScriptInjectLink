@@ -173,7 +173,7 @@
 textarea#sfx_user_data{
     color: white;
     background-color: black;
-    padding: 10px;
+    padding: 15px;
 }
 
 #sfx_options_dialog_sections > div:nth-child(9), #sfx_options_dialog_sections > div:nth-child(10), #sfx_options_dialog_sections > div:nth-child(11), #sfx_options_dialog_sections > div:nth-child(12){
