@@ -103,6 +103,16 @@
     background-color: #242526 !important;
 }
 
+.sfx_options_dialog_panel_header, .sfx_options_dialog_panel_header{
+    clear: both;
+    position: relative;
+    left: -0.5%;
+    font-size: 22px;
+    padding: 5px 5px;
+    margin: 80px 0px 20px;
+    background-color: #2a66a1 !important;
+}
+
 .sfx_options_dialog_section{
     border: 1px solid gray;
     box-sizing: border-box;
