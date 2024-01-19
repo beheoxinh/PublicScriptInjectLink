@@ -175,7 +175,16 @@ textarea#sfx_user_data{
 .xylbxtu {
     max-width: 2400px;
 }
+
+div[role="main"]{
+    
+}
+
+div[role="main"] > div > div > div:first-child {
+  width: 1220px;
+}
+
 @media (min-height: 790px)
-.x1ceravr.x1ceravr {
-    width: 1220px;
+div[role="main"] > div > div > div:first-child {
+  width: 1220px;
 }
