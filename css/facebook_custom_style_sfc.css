@@ -87,3 +87,47 @@
     width: 6px;
     height: 2px
 }
+
+#sfx_badge_menu_wrap, #sfx_options_dialog, #sfx_options_dialog_body, 
+.sfx_options_dialog_option_description, .sfx_options_dialog_option_title, .sfx_options_dialog_section {
+    color: #ffffff;
+    background-color: #242526;
+}
+
+.sfx_options_dialog_section{
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+.sfx_options_dialog_section.selected{
+    background-color: rgb(66, 103, 178) !important;
+    color: white !important;
+    cursor: auto;
+}
+
+#sfx_options_dialog{
+    border: 1px solid lightblue;
+}
+
+#sfx_options_dialog_content > .sfx_options_dialog_table > tr:hover{
+    background-color: #333333;
+}
+
+#sfx_menu_section_links, #sfx_menu_section_debug, #sfx_menu_section_other{
+    display: none !important;
+}
+
+.sfx_menu_section_title{
+    margin-bottom: 8px;
+    padding: 2px 14px 0;
+    font-size: 15px;
+    pointer-events: none !important;
+    cursor: default !important;
+}
+
+.sfx_square_control{
+    margin: 0px 3px;
+    border: 1px solid gray;
+    background-color: black;
+    font-size: 14px;
+}
