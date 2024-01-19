@@ -219,7 +219,7 @@ div[role="main"]{
     max-width: 1240px;
 }
 
-.__fb-dark-mode div[role="main"]{
+.__fb-dark-mode > div > div[role="main"]{
     left: 10%;
 }
 
