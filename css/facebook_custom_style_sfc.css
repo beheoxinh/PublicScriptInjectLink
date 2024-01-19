@@ -110,7 +110,7 @@
 }
 
 #sfx_options_dialog_content .sfx_options_dialog_table tr:hover, .sfx_options_dialog_table tbody tr:hover td{
-    background-color: #242526;
+    background-color: #242526 !important;
 }
 
 #sfx_menu_section_links, #sfx_menu_section_debug, #sfx_menu_section_other{
