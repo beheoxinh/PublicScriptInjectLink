@@ -228,24 +228,25 @@ div[role="main"]{
     left: 10%;
 }
 
-div[role="main"] > div > div > div > div:nth-child(2), div[role="main"] > div > div > div > div:nth-child(2) > div > div> div {
+html[sfx_context_type="newsfeed"] div[role="main"] > div > div > div > div:nth-child(2), div[role="main"] > div > div > div > div:nth-child(2) > div > div> div {
     width: 1220px;
     max-width: 100%;
 }
 
-div[role="main"] > div > div > div > div:last-child > div:first-child {
+html[sfx_context_type="newsfeed"] div[role="main"] > div > div > div > div:last-child > div:first-child {
   width: 1220px;
 }
 
-.x1yztbdb > div {
+/* .x1yztbdb > div {
     width: initial;
     max-width: 590px;
 }
-
+ */
+/* 
 html[sfx_context_type="profile"] div[role="main"] > div > div > div > div:last-child > div:first-child{
     width: unset;
 }
-
+ */
 /* 
 @media (min-height: 790px)
 div[role="main"] > div > div > div > div:last-child > div:first-child {
