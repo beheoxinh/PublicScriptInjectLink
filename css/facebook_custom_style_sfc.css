@@ -242,6 +242,10 @@ div[role="main"] > div > div > div > div:last-child > div:first-child {
     max-width: 590px;
 }
 
+html[sfx_context_type="profile"] div[role="main"] > div > div > div > div:last-child > div:first-child{
+    width: unset;
+}
+
 /* 
 @media (min-height: 790px)
 div[role="main"] > div > div > div > div:last-child > div:first-child {
