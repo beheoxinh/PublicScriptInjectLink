@@ -223,7 +223,7 @@ div[role="main"]{
     max-width: 1240px;
 }
 
-.__fb-dark-mode > div > div[role="main"]{
+html[sfx_context_type="newsfeed"] .__fb-dark-mode > div > div[role="main"]{
     position: relative;
     left: 10%;
 }
@@ -235,6 +235,17 @@ html[sfx_context_type="newsfeed"] div[role="main"] > div > div > div > div:nth-c
 
 html[sfx_context_type="newsfeed"] div[role="main"] > div > div > div > div:last-child > div:first-child {
   width: 1220px;
+}
+
+html[sfx_context_type="messages"] div[role="main"]{
+    width: 100%;
+    max-width: 100%;
+}
+html[sfx_context_type="messages"] div[role="main"] div[role="main"] {
+    left: 0px;
+    width: 100%;
+    max-width: 100%;
+    padding: 0px 25px;
 }
 
 /* .x1yztbdb > div {
