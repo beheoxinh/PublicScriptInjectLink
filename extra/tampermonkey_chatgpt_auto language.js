@@ -24,7 +24,7 @@
 // @require     https://greasyfork.org/scripts/464780-global-module/code/global_module.js
 // @require     https://greasyfork.org/scripts/465643-ajaxhookerlatest/code/ajaxHookerLatest.js
 // @require     https://greasyfork.org/scripts/465512-google-translate-engine/code/GoogleTranslateEngine.js
-// @description: Thay đổi trò chuyện & Khai báo trả lời bằng ngôn ngữ được chỉ định cho GPT
+// @description Thay đổi trò chuyện & Khai báo trả lời bằng ngôn ngữ được chỉ định cho GPT
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=openai.com
 // ==/UserScript==
 
