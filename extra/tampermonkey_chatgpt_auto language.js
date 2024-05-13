@@ -3,7 +3,8 @@
 // @name:id     ChatGPT auto language
 // @namespace   Violentmonkey Scripts
 // @match       *://chat.openai.com/*
-// @version     beheoxinh:14.10.2023
+// @match       *://chatgpt.com/*
+// @version     v13.05.2024
 // @grant       GM_info
 // @grant       GM_getValue
 // @grant       GM_setValue
