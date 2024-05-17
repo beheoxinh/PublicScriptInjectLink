@@ -2,9 +2,9 @@
 // @name        ChatGPT Auto Language
 // @name:id     ChatGPT auto language
 // @namespace   Violentmonkey Scripts
-// @match       *://chat.openai.com/*
 // @match       *://chatgpt.com/*
-// @version     v13.05.2024
+// @match       *://chat.openai.com/*
+// @version     beheoxinh:14.10.2023
 // @grant       GM_info
 // @grant       GM_getValue
 // @grant       GM_setValue
@@ -127,8 +127,8 @@ function createButtonOrShow(id = null, Show = null) {
         if (Show != null) document.getElementById(id).style.display = Show;
         return;
     }
-    let border = document.querySelectorAll('div[class^="border-"]');
-    border = border[border.length - 1];
+    let border = document.querySelectorAll('div[class="grow"]');
+    border = border[0];
     let div = document.createElement('div');
     div.id = id;
     let className = border.childNodes[0].className;
@@ -248,7 +248,8 @@ HookFun.set('/api/auth/session', function (req, res, Text, period) {
 });
 HookFun.set('/backend-api/conversation', function (req, res, Text, period) {
     if (period === 'preload') {
-        let additional = 'Tôi chỉ có thể đọc tiếng việt nam. Vui lòng không sử dụng ngôn ngữ khác! ';
+        let additional = 'Tôi chỉ có thể đọc tiếng việt nam. Vui trả lời bằng tiếng việt nam ';
+        let additionals = additional + browserLanguage;
         let body = JSON.parse(req.data);
         let messages = body.messages;
         if (messages instanceof Array) {
@@ -375,53 +376,3 @@ function handleResponse(request) {
 ajaxHooker.hook(handleResponse);
 // eslint-disable-next-line no-undef
 globalVariable.set('TranslateMachine', new TranslateMachine());
-
-
-(function() {
-    'use strict';
-    function insertButton(elem) {
-        let formElem = document.getElementsByTagName('form')[0];
-        let btnsParent = formElem.getElementsByTagName('button')[0].parentElement;
-        btnsParent.insertBefore(elem, btnsParent.firstElementChild);
-    }
-
-    function createBtn() {
-        let continueBtn = document.createElement('button');
-        continueBtn.textContent = "Continue";
-        continueBtn.setAttribute('style', 'display: flex; cursor: pointer;');
-        continueBtn.className = 'btn flex gap-2 justify-center btn-neutral';
-        return continueBtn;
-    }
-
-    function getPrevNodeValues() {
-        let codeBlocks = document.querySelectorAll('code.hljs');
-        let lastCodeBlock = codeBlocks[codeBlocks.length - 1];
-        let children = lastCodeBlock.innerText.split("\n")
-        let res = "";
-        for (let i=children.length-1; i>=0 && res.trim().length < 20; i--) {
-            res += children[i];
-        }
-        return res;
-    }
-
-    function updateTextArea(value) {
-        document.getElementsByTagName('textarea')[0].value = value
-    }
-
-    function main() {
-
-        const btn = createBtn();
-        insertButton(btn);
-        btn.onclick = () => {
-            try {
-                updateTextArea("what is the remaining part of the previous code? It ended at " + getPrevNodeValues());
-            } catch (error) {
-                console.log("Some error occured. Possible reasons:- Previous ChatGPT response does not include any code block or Website structure changed. The actual error: ", error)
-            }
-        }
-
-    }
-
-    main();
-
-})();
