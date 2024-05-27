@@ -138,7 +138,7 @@
     background-color: #242526 !important;
 }
 
-#sfx_menu_section_links, #sfx_menu_section_debug, #sfx_menu_section_other{
+#sfx_menu_section_links, #sfx_menu_section_debug{
     display: none !important;
 }
 #sfx_options_dialog_section input.sfx_input{
