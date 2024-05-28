@@ -234,7 +234,7 @@ html[sfx_context_type="newsfeed"] div[role="main"] > div > div > div > div:nth-c
 }
 
 html[sfx_context_type="newsfeed"] div[role="main"] > div > div > div > div:last-child > div:first-child {
-  width: 1220px;
+  width: 100%;
 }
 
 html[sfx_context_type="messages"] div[role="main"]{
